@@ -4,8 +4,10 @@
  * a simple "caching" layer so it will reuse cached images if you attempt
  * to load the same image multiple times.
  */
+
+ //JC--WHAT IS THIS (FUNCTION() THING DOING?
 (function() {
-    var resourceCache = {};
+    var resourceCache = {}; //JC--WHAT IS THIS THING HERE?
     var readyCallbacks = [];
 
     /* This is the publicly accessible image loading function. It accepts
@@ -19,7 +21,7 @@
              * loader on that image file
              */
             urlOrArr.forEach(function(url) {
-                _load(url);
+                _load(url); \\JC-WHAT IS THE DEAL WITH THE UNDERSCORE?
             });
         } else {
             /* The developer did not pass an array to this function,
